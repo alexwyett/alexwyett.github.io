@@ -1,0 +1,17 @@
+@media (max-width: 799px) {
+  body {
+    font-size: 100%;
+  }
+  #container {
+    display: block;
+  }
+  #left,
+  #right {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  #left nav {
+    text-align: left;
+  }
+}

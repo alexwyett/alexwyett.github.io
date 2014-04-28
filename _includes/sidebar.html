@@ -1,0 +1,12 @@
+<aside id="left">
+    <nav>
+        <ul>
+            <li><a href="{{ site.baseurl }}" class="active">Home</a></li>
+            <li><a href="{{ site.baseurl }}about.html">About Me</a></li>
+            {% for post in site.posts %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            <li><a href="{{ site.baseurl }}archive.html">Archive</a></li>
+        </ul>
+    </nav>
+</aside>
