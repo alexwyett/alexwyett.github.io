@@ -14,6 +14,38 @@ To be honest, in this post there isn't much for you to see.  This will serve me 
 
 ## Style Guide
 
-<code class="prettyprint">
-// This should be a code block
+Code block:
+
+PHP
+<code class="prettyprint" lang="php">
+
+/**
+ * Foo
+ */
+class foo() {
+    /**
+     * Foo - bar
+     *
+     * @return void
+     */
+    function bar() {
+        return;
+    }
+}
+
+$foo = new foo();
+
+$foo->bar();
+</code>
+
+Javascript
+<code class="prettyprint" lang="js">
+function foo() {
+    this.bar = function() {
+        return;
+    }
+}
+
+var foo = new foo();
+foo.bar();
 </code>
