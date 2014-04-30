@@ -17,8 +17,7 @@ To be honest, in this post there isn't much for you to see.  This will serve me 
 Code block:
 
 PHP
-<code class="prettyprint" lang="php">
-
+```php
 /**
  * Foo
  */
@@ -36,10 +35,10 @@ class foo() {
 $foo = new foo();
 
 $foo->bar();
-</code>
+```
 
 Javascript
-<code class="prettyprint" lang="js">
+```js
 function foo() {
     this.bar = function() {
         return;
@@ -48,4 +47,4 @@ function foo() {
 
 var foo = new foo();
 foo.bar();
-</code>
+```
