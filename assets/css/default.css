@@ -586,3 +586,8 @@ h5 {
 #right {
   background-color: #fffeee;
 }
+code.prettyprint {
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
