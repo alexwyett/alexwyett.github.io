@@ -532,16 +532,17 @@ article {
 ============================================================================ */
 body {
   font-family: 'Droid Sans', 'sans-serif';
+  color: #551e1e;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Oswald', 'sans-serif';
   font-weight: normal;
   font-variant: small-caps;
   margin: 20px 0;
+  color: #555555;
 }
 h1 {
   font-size: 2.2em;
@@ -563,9 +564,6 @@ h5 {
 }
 #left nav {
   text-align: right;
-}
-#left nav ul {
-  font-family: 'Droid Sans', 'sans-serif';
 }
 #left nav ul li a {
   text-decoration: none;
