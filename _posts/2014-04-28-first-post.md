@@ -16,8 +16,7 @@ To be honest, in this post there isn't much for you to see.  This will serve me 
 
 Code block:
 
-PHP
-```php
+```prettyprint
 /**
  * Foo
  */
@@ -38,7 +37,7 @@ $foo->bar();
 ```
 
 Javascript
-```js
+```prettyprint
 function foo() {
     this.bar = function() {
         return;
