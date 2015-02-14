@@ -1,9 +1,18 @@
-<aside id="left">
-    <nav>
+<!-- 
+    Menu toggle - semantically meh but it works with no js (yay)
+    It's important that this toggle is adjacent to the aside element
+-->
+<input type="checkbox" id="menutoggle">
+<!-- /Menu toggle -->
+<aside class="aw_sidebar">
+    <h1 class="aw_sidebar_title">
+        <a href="/">{{ page.title }}{% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</a>
+    </h1>
+    <nav class="nav" role="menu">
         <ul>
-            <li><a href="{{ site.baseurl }}" class="active">Home</a></li>
-            <li><a href="{{ site.baseurl }}about.html">About Me</a></li>
-            <li><a href="{{ site.baseurl }}archive.html">Archive</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About Me</a></li>
+            <li><a href="/archive.html">Archive</a></li>
         </ul>
     </nav>
 </aside>

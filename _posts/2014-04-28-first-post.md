@@ -16,34 +16,20 @@ To be honest, in this post there isn't much for you to see.  This will serve me 
 
 Code block:
 
-```prettyprint
-/**
- * Foo
- */
-class foo() {
     /**
-     * Foo - bar
-     *
-     * @return void
+     * Foo
      */
-    function bar() {
-        return;
+    class foo() {
+        /**
+         * Foo - bar
+         *
+         * @return void
+         */
+        function bar() {
+            return;
+        }
     }
-}
 
-$foo = new foo();
+    $foo = new foo();
 
-$foo->bar();
-```
-
-Javascript
-```prettyprint
-function foo() {
-    this.bar = function() {
-        return;
-    }
-}
-
-var foo = new foo();
-foo.bar();
-```
+    $foo->bar();

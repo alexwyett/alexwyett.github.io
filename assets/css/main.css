@@ -1,0 +1,313 @@
+/**
+ * The Original Cottage Company (TOCC)
+ *  
+ * @title       Web style guide 
+ * @author      Alex Wyett (alex@carltonsoftware.co.uk)
+ * @document    Mixin Collection
+ * @description This file contains all of the mixins required for the TOCC
+ *              template.
+ */
+/* ==========================================================================
+   Font Size http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+============================================================================ */
+/* ==========================================================================
+   The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
+============================================================================ */
+.clear {
+  *zoom: 1;
+}
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+/* ==========================================================================
+   HTML5 Boilerplate mixins
+============================================================================ */
+.hide {
+  display: none;
+  visibility: hidden;
+}
+/**
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* ==========================================================================
+   LESS Elements 0.9
+   
+   A set of useful LESS mixins. More info at: http://lesselements.com
+============================================================================ */
+/**
+ * Box sizing ftw
+ */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/**
+ * Rem font sizing setp for 10px
+ */
+html {
+  font-size: 62.5%;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  background: #353535;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #ffcc00;
+}
+h1 {
+  font-size: 30px;
+  font-size: 3rem;
+}
+h2 {
+  font-size: 28px;
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 26px;
+  font-size: 2.6rem;
+}
+h4 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+a {
+  color: #ffffff;
+}
+.aw_main article {
+  width: 70%;
+  margin: 10% 20% 0 10%;
+}
+.aw_main article a {
+  border-bottom: dotted 1px #ffffff;
+  text-decoration: none;
+}
+.aw_main article .title {
+  font-size: 30px;
+  font-size: 3rem;
+}
+.aw_main article .title time,
+.aw_main article .title small {
+  font-size: 16px;
+  font-size: 1.6rem;
+  display: block;
+  color: #ffffff;
+}
+.aw_main article p,
+.aw_main article blockquote,
+.aw_main article pre,
+.aw_main article code,
+.aw_main article li {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 30px;
+  color: #999999;
+}
+.aw_main article blockquote,
+.aw_main article pre,
+.aw_main article figure {
+  margin: 5%;
+}
+.aw_main article blockquote,
+.aw_main article pre {
+  background: #4f4f4f;
+  padding: 20px;
+}
+.aw_main article blockquote,
+.aw_main article figure img,
+.aw_main article figure figcaption {
+  border-left: 5px solid #ffcc00;
+}
+.aw_main article pre,
+.aw_main article code {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: color 500ms ease-in-out;
+  -moz-transition: color 500ms ease-in-out;
+  -o-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
+  display: block;
+  white-space: pre-wrap;
+}
+.aw_main article pre strong,
+.aw_main article code strong {
+  color: #ffcc00;
+}
+.aw_main article pre span,
+.aw_main article code span {
+  color: #ffffff;
+}
+.aw_main article pre:hover,
+.aw_main article code:hover {
+  color: #e5e5e5;
+}
+.aw_main article figure {
+  position: relative;
+}
+.aw_main article figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.aw_main article figure figcaption {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 30px;
+  text-align: center;
+  background: #2c2c2c;
+  background: rgba(44, 44, 44, 0.5);
+  width: 100%;
+}
+.aw_main article .tags {
+  display: block;
+}
+.aw_main article .tags span {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 2px 5px;
+  background: #9a98f4;
+}
+.aw #menutoggle {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: -9999px;
+  z-index: 0;
+}
+.aw #menutoggle:after {
+  width: 10%;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  -webkit-transition: left 0.5s ease-in-out;
+  -moz-transition: left 0.5s ease-in-out;
+  -o-transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
+  position: fixed;
+  left: 0;
+  background: #2c2c2c;
+  content: "\2261";
+  color: #ffffff;
+  font-size: 40px;
+  font-size: 4rem;
+  text-align: center;
+  cursor: pointer;
+}
+.aw #menutoggle:checked:after {
+  left: 90%;
+}
+.aw #menutoggle:checked + .aw_sidebar {
+  left: 0;
+}
+.aw_sidebar {
+  width: 90%;
+  height: 100%;
+  display: block;
+  -webkit-transition: left 0.5s ease-in-out;
+  -moz-transition: left 0.5s ease-in-out;
+  -o-transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  left: -90%;
+  background: #2c2c2c;
+}
+.aw_sidebar_title {
+  width: 100px;
+  height: 100px;
+  display: block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 5px solid #ffffff;
+  margin: 20px auto;
+  padding: 0;
+  background: url('http://www.gravatar.com/avatar/e7948869a7655f7476802505584722d0.png?s=200') no-repeat transparent;
+  background-size: 100% 100%;
+}
+.aw_sidebar_title a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-indent: -9999px;
+}
+.aw_sidebar .nav {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.aw_sidebar .nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.aw_sidebar .nav ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 10px;
+  color: #ffffff;
+}
+@media (min-width: 48em) {
+  .browserupgrade {
+    position: fixed;
+    top: 0;
+    left: 35%;
+    width: 60%;
+    font-size: 30px;
+    font-size: 3rem;
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    background: #2c2c2c;
+  }
+  .aw #menutoggle {
+    display: none;
+  }
+  .aw_sidebar {
+    width: 30%;
+    left: 0;
+  }
+  .aw_main {
+    padding-left: 30%;
+  }
+}

@@ -1,0 +1,75 @@
+.aw {
+    #menutoggle {
+        .absolute(0, auto, auto, -9999px);
+        
+        &:after {
+            .box(10%, 40px);
+            line-height: 40px;
+            .transition(left, 0.5s, ease-in-out);
+            position: fixed;
+            left: 0;
+            background: @sidebar-color;
+            content: "\2261";
+            color: @nav-font-color;
+            .font-size(4);
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    
+    #menutoggle:checked {
+        &:after {
+            left: 90%;
+        }
+    }
+    
+    #menutoggle:checked + .aw_sidebar {
+        left: 0;
+    }
+
+    &_sidebar {
+        .box(90%, 100%);
+        .transition(left, 0.5s, ease-in-out);
+        position: fixed;
+        top: 0;
+        text-align: center;
+        left: -90%;
+        
+        background: @sidebar-color;
+        
+        &_title {
+            .box(100px, 100px);
+            .rounded(50%);
+            border: 5px solid @nav-font-color;
+            margin: 20px auto;
+            padding: 0;
+            
+            background: url('http://www.gravatar.com/avatar/e7948869a7655f7476802505584722d0.png?s=200') no-repeat transparent;
+            background-size: 100% 100%;
+            
+            a {
+                .box(100%, 100%);
+                text-indent: -9999px;
+            }
+        }
+        
+        .nav {
+            .box(100%, 100%);
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                
+                li {
+                    a {
+                        .box(100%, 100%);
+                        .font-size(2);
+                        text-decoration: none;
+                        padding: 10px;
+                        color: @nav-font-color;
+                    }
+                }
+            }
+        }
+    }
+}
