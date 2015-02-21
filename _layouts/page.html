@@ -7,14 +7,10 @@ layout: base
         {{ page.title }}
         <small>
             {% if page.tagline %} {{ page.tagline }}{% endif %}
-
-            {% if page.tags.size > 0 %}
-                <span class="tags">
-                    {% for tag in page.tags %}
-                        <span>{{ tag }}</span>
-                    {% endfor %}
-                </span>
-            {% endif %}
+            
+            {% assign spantags = page.tags %}
+            {% include tags.html %}
+            
         </small>
     </h2>
 

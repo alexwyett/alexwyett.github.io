@@ -32,5 +32,9 @@
 
         <script src="/assets/js/plugins.js"></script>
         <script src="/assets/js/main.js"></script>
+        
+        {% for script in page.javascript %}
+            <script src="/assets/js/{{ script }}.js"></script>
+        {% endfor %}
     </body>
 </html>

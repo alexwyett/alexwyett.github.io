@@ -1,0 +1,23 @@
+- slug: javascript
+  name: Javascript
+
+- slug: beginner
+  name: Beginner
+
+- slug: jekyll
+  name: Jekyll
+
+- slug: tutorial
+  name: Tutorial
+
+- slug: php
+  name: PHP
+
+- slug: drupal
+  name: Drupal
+
+- slug: css
+  name: CSS
+
+- slug: html
+  name: HTML
