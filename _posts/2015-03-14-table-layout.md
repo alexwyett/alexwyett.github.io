@@ -19,7 +19,7 @@ The table-layout:fixed; property solves this problem by:
 Table and column widths are set by the widths of table and col elements or by the width of the first row of cells. Cells in subsequent rows do not affect column widths.
 </blockquote>
 
-This means that you have much more finite control of the data in your table.  Combining it with a css ellipsis you can get some neat results. See pen below. 
+This means that you have much more finite control of the data in your table.  Combining it with a css ellipsis you can get some neat results. Try resising the window when looking at the pen below.
 
 <p data-height="225" data-theme-id="0" data-slug-hash="bNQbYy" data-default-tab="result" data-user="alexwyett" class='codepen'>See the Pen <a href='http://codepen.io/alexwyett/pen/bNQbYy/'>bNQbYy</a> by Alex Wyett (<a href='http://codepen.io/alexwyett'>@alexwyett</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
