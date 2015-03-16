@@ -2,6 +2,8 @@
 layout: page
 title : Search results
 javascript: [ search ]
+
+mustacheSetDelimiter: "{{=<% %>=}}"
 ---
 
 <div id="contents">
@@ -9,10 +11,11 @@ javascript: [ search ]
 </div>
 
 <script type="text/x-mustache" id="srch">
-    {{#results}}
-        <p>{{title}}</p>
-    {{/results}}
-    {{^results}}
+    {{ page.setMustacheDelimeter }}
+    <%#results%>
+        <p><%title%></p>
+    <%/results%>
+    <%^results%>
         <p>No results found.</p>
-    {{/results}}
+    <%/results%>
 </script>
