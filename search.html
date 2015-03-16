@@ -4,3 +4,15 @@ title : Search results
 javascript: [ search ]
 ---
 
+<div id="contents">
+    Searching for results...
+</div>
+
+<script type="text/x-mustache" id="srch">
+    {{#results}}
+        <p>{{title}}</p>
+    {{/results}}
+    {{^results}}
+        <p>No results found.</p>
+    {{/results}}
+</script>
