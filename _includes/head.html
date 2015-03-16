@@ -1,21 +1,21 @@
 <head itemscope itemtype="http://schema.org/Blog">
 
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="/assets/css/normalize.css">
-        <link rel="stylesheet" href="/assets/css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
-        <!--[if lt IE 9]>
-            <script src="/assets/js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
-        <![endif]-->
-        
+    <!--[if lt IE 9]>
+        <script src="/assets/js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
+    <![endif]-->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ page.title }} | Alex Wyett</title>
     <meta name="description" content="{% if page.tagline %}{{ page.tagline }}{% endif %}">
-    
+        
     <link rel="canonical" href="{{ site.production_url }}{{ page.url | replace:'index.html','' }}">
-    
+       
     <meta property="og:title"        content="{{ page.title }}">
     <meta property="og:url"          content="{{ site.production_url }}{{ page.url | replace:'index.html','' }}">
     <meta property="og:type"         content="blog" />
@@ -23,4 +23,14 @@
     <meta property="og:site_name"    content="{{ site.production_url }}" />
     <meta property="og:language"     content="en" />
     <meta property="og:image"        content="" />
+
+    <!-- jQuery -->
+    <script src="//cdn.jsdelivr.net/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Mustache templating -->
+    <script src="//cdn.jsdelivr.net/mustache.js/0.8.1/mustache.js"></script>
+    <!-- Adding Promise and Fetch polyfills -->
+    <!-- Using http://polyfills.io/ API -->
+    <script src="https://cdn.jsdelivr.net/polyfills/polyfill.js+promise,fetch"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    
 </head>
