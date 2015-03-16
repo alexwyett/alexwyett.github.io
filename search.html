@@ -13,7 +13,15 @@ setMustacheDelimeter: "{{=<% %>=}}"
 <script type="text/x-mustache" id="srch">
     {{ page.setMustacheDelimeter }}
     <%#results%>
-        <p><%title%></p>
+        <article class="post teaser">
+            <h3 class="title">
+                <%title%>
+                <small><%date.day%> <%date.month%> <%date.year%></small>
+            </h3>
+            <p class="cta">
+                <a href="{{ BASE_PATH }}<%href%>">Read Post &raquo;</a>
+            </p>
+        </article>
     <%/results%>
     <%^results%>
         <p>No results found.</p>
