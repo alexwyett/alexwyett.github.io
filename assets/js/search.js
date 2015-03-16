@@ -250,5 +250,5 @@ var AWSearch = AW.extend({
 
 (function(){
     var s = new AWSearch();
-    data = s.search(s.getQueryParam('s'));
+    data = s.search(s.getQueryParam('tag'));
 })()
