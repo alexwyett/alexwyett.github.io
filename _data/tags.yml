@@ -21,3 +21,12 @@
 
 - slug: html
   name: HTML
+
+- slug: symfony
+  name: Symfony
+
+- slug: unit-testing
+  name: Unit Testing
+
+- slug: oo
+  name: OO
