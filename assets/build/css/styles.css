@@ -4531,7 +4531,7 @@ a.thumbnail {
     border: 5px solid #FFF;
     margin: 20px auto;
     padding: 0;
-    background: url("http://www.gravatar.com/avatar/e7948869a7655f7476802505584722d0.png?s=200") no-repeat transparent;
+    background: url("//www.gravatar.com/avatar/e7948869a7655f7476802505584722d0.png?s=200") no-repeat transparent;
     background-size: 100% 100%; }
     .aw_sidebar_title a {
       display: block;
