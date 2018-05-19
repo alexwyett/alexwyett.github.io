@@ -2,8 +2,9 @@
 layout: list
 title: Home
 tagline: Yet another developer blog
+navigation: true
+order: 1
 ---
-{% include JB/setup %}
 
 <div>
     {% for post in site.posts limit:5 %}

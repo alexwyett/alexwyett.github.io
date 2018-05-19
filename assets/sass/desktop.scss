@@ -1,0 +1,16 @@
+@include breakpoint(medium) {
+    .aw {
+        #menutoggle {
+            display: none;
+        }
+
+        &_sidebar {
+            width: 30%;
+            left: 0;
+        }
+        
+        &_main {
+            padding-left: 30%;
+        }
+    }
+}

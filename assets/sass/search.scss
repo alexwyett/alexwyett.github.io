@@ -1,0 +1,24 @@
+.search {
+  padding: 2rem;
+
+  input {
+    background: $sidebar-color;
+    border: 0 none;
+    box-shadow: none;
+    color: $nav-font-color;
+
+    &:focus, &:active {
+      background: $sidebar-color;
+      color: $nav-font-color;
+      box-shadow: none;
+      border: 0 none;
+    }
+  }
+
+  #results {
+    .callout {
+      background: $sidebar-color;
+      color: $nav-font-color;
+    }
+  }
+}

@@ -1,14 +1,14 @@
 {% if spantags.size > 0 %}
-    <span class="tags">
-        {% for post_tag in spantags %}
-            {% for data_tag in site.data.tags %}
-                {% if data_tag.slug == post_tag %}
-                    {% assign tag = data_tag %}
-                {% endif %}
-            {% endfor %}
-            {% if tag %}
-                <a href="/search.html?tag={{ tag.slug }}">{{ tag.name }}</a>
-            {% endif %}
-        {% endfor %}
-    </span>
+  <span class="tags">
+    {% for post_tag in spantags %}
+      {% for data_tag in site.data.tags %}
+        {% if data_tag.slug == post_tag %}
+          {% assign tag = data_tag %}
+        {% endif %}
+      {% endfor %}
+      {% if tag %}
+        <a href="/?s={{ tag.name }}">{{ tag.name }}</a>
+      {% endif %}
+    {% endfor %}
+  </span>
 {% endif %}

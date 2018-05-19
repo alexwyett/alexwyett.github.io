@@ -2,8 +2,7 @@ title: Alex Wyett
 email: alex.wyett@gmail.com
 description: Just another developer blog
 baseurl: ""
-url: "https://alexwyett.github.io" 
-enforce_ssl: alexwyett.github.io   # without any protocol
+url: "http://localhost:2610"
 
 relative_permalinks: false
 

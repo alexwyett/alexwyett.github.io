@@ -1,0 +1,18 @@
+{
+    "title": "{{ item.title }}",
+    "description": "{{ item.description }}",
+    "tags": [
+      {% for t in item.tags %}
+        {% for data_tag in site.data.tags %}
+          {% if data_tag.slug == t %}
+            {% assign tag = data_tag %}
+          {% endif %}
+        {% endfor %}
+        {% if tag %}
+          "{{ tag.name }}"
+        {% endif %}
+        {% if forloop.last == false %},{% endif %}
+      {% endfor %}
+    ],
+    "href": "{{ item.url }}"
+}

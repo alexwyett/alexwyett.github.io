@@ -1,0 +1,105 @@
+
+
+html, body {
+  background: $bg-color;
+}
+
+html, body {
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: $title-color;
+}
+
+a {
+  color: $nav-font-color;
+}
+
+.tags {
+  display: block;
+  @extend .clearfix;
+
+  span,
+  a {
+    @include rounded(3px);
+    font-size: rem-calc(12);
+
+    font-weight: bold;
+    padding: 2px 5px;
+    background: $tag-color;
+    border: none;
+    display: block;
+    float: left;
+    margin-right: 3px;
+  }
+}
+
+.aw {
+  &_main {
+    article {
+      width: 70%;
+      margin: 5% 20% 0 10%;
+      
+      a {
+        border-bottom: dotted 1px $nav-font-color;
+        text-decoration: none;
+      }
+        
+      .title {
+        time,
+        small {
+          font-size: rem-calc(16);
+          display: block;
+          color: $nav-font-color;
+          line-height: normal;
+        }  
+      }
+      
+      p,
+      blockquote,
+      pre,
+      code,
+      li {
+        font-size: rem-calc(20);
+        line-height: 30px;
+        color: $font-color;
+      }
+        
+      blockquote,
+      pre,
+      figure {
+        margin: 5%;
+      }
+        
+      blockquote, pre {
+        background: lighten($bg-color, 10);
+        padding: 20px;
+      }
+        
+      blockquote,
+      figure img,
+      figure figcaption {
+        border-left: 5px solid $title-color;
+      }
+      
+      pre,
+      code {
+        @include rounded(10px);
+        display: block;
+        white-space: pre-wrap;
+        
+        strong {
+          color: $title-color;
+        }
+      }
+
+      code {
+        background: none;
+        border: 0 none;
+      }
+    }
+  }
+}
