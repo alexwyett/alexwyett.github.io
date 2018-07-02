@@ -9,11 +9,6 @@ relative_permalinks: false
 
 github_username: alexwyett
 
-# Build settings
-plugins:
-  - jekyll-sitemap
-  - jekyll-paginate
-
 defaults:
   -
     scope:
